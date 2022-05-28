@@ -1,13 +1,53 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+// Then add additional custom code here
+
+/*Color Theme*/
+
+$light-white: #f9f9f9;
+$reddish-red: #ce3232;
+$black: black;
+$light-grey: #757575;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-   font-size: 1.6rem;
-   width: 100%;
-
+body {
+  font-size: 1.6rem;
+  h5 {
+    color: $light-grey;
+  }
+  p {
+    font-size: 1.2rem;
+    color: $light-grey;
+  }
 }
+.about-section {
+  padding: 8rem 0;
+}
+.team-section {
+  padding: 8rem 0;
+  background-color: $light-white;
+  .card {
+    // filter: contrast(0.7);
+    &:hover {
+      box-shadow: -1px 0px 3px 3px #b359593f;
+      transition: 1s;
+    }
+  }
 
-
+  a {
+    background-color: $reddish-red;
+    color: $light-white;
+    border: none;
+    &:hover {
+      cursor: pointer;
+      background-color: $black;
+      transition: 1.2s;
+      color: $light-white;
+    }
+  }
+}
