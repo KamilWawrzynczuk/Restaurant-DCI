@@ -16,6 +16,9 @@ $light-grey: #757575;
 }
 
 body {
+  h2::after {
+    content: '';
+  }
   font-size: 1.6rem;
   h5 {
     color: $light-grey;

@@ -11128,6 +11128,9 @@ textarea.form-control-lg {
 body {
   font-size: 1.6rem;
 }
+body h2::after, body .h2::after {
+  content: "";
+}
 body h5, body .h5 {
   color: #757575;
 }
@@ -11137,11 +11140,11 @@ body p {
 }
 
 .about-section {
-  padding: 8rem 0;
+  padding: 6rem 0;
 }
 
 .team-section {
-  padding: 8rem 0;
+  padding: 6rem 0;
   background-color: #f9f9f9;
 }
 .team-section .card:hover {
