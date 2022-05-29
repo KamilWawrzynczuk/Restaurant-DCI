@@ -1,5 +1,16 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
+
+
+// MABOOOBI CUSTOM CSS 
+
+/*Color Theme*/
+
+$light-white: #f9f9f9;
+$reddish-red: #ce3232;
+$black: black;
+$light-grey: #757575;
+
 * {
   margin: 0;
   padding: 0;
@@ -7,11 +18,50 @@
 }
 
 body {
+  h2::after {
+    content: '';
+  }
   font-size: 1.6rem;
-  width: 100%;
+  h5 {
+    color: $light-grey;
+  }
+  p {
+    font-size: 1.2rem;
+    color: $light-grey;
+  }
+}
+.about-section {
+  padding: 6rem 0;
+}
+.team-section {
+  padding: 6rem 0;
+  background-color: $light-white;
+  .card {
+    // filter: contrast(0.7);
+    &:hover {
+      box-shadow: -1px 0px 3px 3px #b359593f;
+      transition: 1s;
+    }
+  }
+
+  a {
+    background-color: $reddish-red;
+    color: $light-white;
+    border: none;
+    &:hover {
+      cursor: pointer;
+      background-color: $black;
+      transition: 1.2s;
+      color: $light-white;
+    }
+  }
 }
 
-//FOOOTER
+
+
+
+
+//FOOOTER KAMIL CUSTOME CSS
 
 $text_border_color: rgb(133, 131, 131);
 $footer_red: rgb(233, 94, 94);

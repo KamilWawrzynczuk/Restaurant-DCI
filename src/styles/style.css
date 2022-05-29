@@ -11118,6 +11118,7 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+/*Color Theme*/
 * {
   margin: 0;
   padding: 0;
@@ -11126,7 +11127,40 @@ textarea.form-control-lg {
 
 body {
   font-size: 1.6rem;
-  width: 100%;
+}
+body h2::after, body .h2::after {
+  content: "";
+}
+body h5, body .h5 {
+  color: #757575;
+}
+body p {
+  font-size: 1.2rem;
+  color: #757575;
+}
+
+.about-section {
+  padding: 6rem 0;
+}
+
+.team-section {
+  padding: 6rem 0;
+  background-color: #f9f9f9;
+}
+.team-section .card:hover {
+  box-shadow: -1px 0px 3px 3px rgba(179, 89, 89, 0.2470588235);
+  transition: 1s;
+}
+.team-section a {
+  background-color: #ce3232;
+  color: #f9f9f9;
+  border: none;
+}
+.team-section a:hover {
+  cursor: pointer;
+  background-color: black;
+  transition: 1.2s;
+  color: #f9f9f9;
 }
 
 .footer {
