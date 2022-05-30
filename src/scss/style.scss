@@ -8,6 +8,8 @@ $light-white: #f9f9f9;
 $reddish-red: #ce3232;
 $black: black;
 $light-grey: #757575;
+$op-black: rgba(0, 0, 0,0.7);
+$p-color: rgb(200, 200, 200);
 
 * {
   margin: 0;
@@ -51,6 +53,228 @@ body {
       background-color: $black;
       transition: 1.2s;
       color: $light-white;
+    }
+  }
+}
+
+// Alwaki
+
+.menus{
+  h4{
+    color: $light-grey;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  div{
+    .image{
+
+      height: 45vh;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: end;
+      padding: 0;
+      &:hover{
+        cursor: pointer;
+        transition: 1s;
+        background: scale(1.1) ;
+      }
+      &:hover div{
+        cursor: pointer;
+        display: block;
+        animation: slid 0.5s ease-in-out;
+      }
+      div{
+        width: 85%;
+        background-color: $op-black;
+        height: 15vh;
+        color: $light-white;   
+        flex-direction: column;
+        align-items: start;
+        padding: 20px;
+        display: none;
+        h3{
+          font-size: 24px;
+        }
+        p{
+          color: $p-color;
+          text-transform: uppercase;
+          font-size: 10px;
+          font-weight: bold;
+        }
+      }
+      .price{
+        width: 20% ;
+      }
+    }
+  }
+}
+
+.test{
+  width: 100%;
+  height: 45vh;
+  background-color: rgba(0, 0, 0,0.5);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $light-white;
+  h2{
+    margin-bottom: 5%;
+  }
+  div{
+    
+    p{
+      font-size: 1.2rem;
+      margin: auto;
+      width: 80%;
+      margin-bottom: 3%;
+      color: $light-white;
+    }
+    div{
+      display: flex;
+      justify-content: center;
+      h4{
+        font-weight: bold;
+      }
+      span{
+        font-size: 1.2rem;
+        margin-left: 2%;
+      }
+    }
+  }
+}
+    .div1{
+      display: none;
+    }
+    .div2{
+      display: none;
+    }
+  
+
+@for $i from 1 through 6 {
+  .img_#{$i} {
+    background-image: url(../images/menu-image#{$i}.jpg) ;
+    
+  }
+}
+
+@keyframes slid {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  
+}
+
+
+//FOOOTER KAMIL CUSTOME CSS
+
+$text_border_color: rgb(133, 131, 131);
+$footer_red: rgb(233, 94, 94);
+
+.footer {
+  .row {
+    margin: 2rem 0;
+  }
+  #map {
+    margin-bottom: 1rem;
+  }
+  p {
+    font-size: 1rem;
+    color: $text_border_color;
+    font-weight: lighter;
+  }
+  margin: 1rem;
+  padding: 1rem;
+  #contact_us {
+    input,
+    textarea {
+      border-width: 0 0 1px 0;
+      border-radius: 0;
+      border-color: $text_border_color;
+      padding: 1rem;
+      &:focus {
+        outline: none;
+        box-shadow: none;
+        border-color: $text_border_color;
+      }
+    }
+    .btn_custom {
+      border: 0;
+      border-radius: 0;
+      margin: 1rem auto;
+      transition: all 0.8s;
+      padding: 0.8rem;
+      color: #fff;
+      background-color: $footer_red;
+      &:hover {
+        background-color: rgb(34, 33, 33);
+      }
+    }
+  }
+  #find_us,
+  #reservation {
+    p {
+      margin-top: 1rem;
+    }
+  }
+  .open_hours {
+    background: url("../images/open_hours.avif") rgba(0, 0, 0, 0.7);
+    background-position: center right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    border-radius: 10px;
+    width: 100%;
+    color: #fff;
+    padding: 1rem;
+    text-align: left;
+    .days {
+      margin: 1rem 0;
+      .bold_day {
+        font-weight: bold;
+        margin-bottom: -5px;
+      }
+    }
+  }
+  #social_media {
+    .social_media_icons {
+      display: flex;
+      width: 100%;
+      justify-content: flex-start;
+      margin-top: 2rem;
+      color: $footer_red;
+
+      i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $footer_red;
+        background-color: transparent;
+        width: 35px;
+        height: 35px;
+        border-radius: 100%;
+        transform-origin: middle;
+        transition: all 0.2s;
+        &:hover {
+          background-color: $footer_red;
+          color: #fff;
+        }
+      }
+    }
+    .copyright {
+      p {
+        margin: 1rem 0.8rem;
+      }
     }
   }
 }
