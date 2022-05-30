@@ -2,6 +2,60 @@
 
 // Then add additional custom code here
 
+// kamal //
+
+nav{
+    
+  ul{
+      li {
+          a{
+          &:hover{
+              background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(107,9,121,1) 0%, rgba(255,0,56,1) 100%);   
+          }
+} 
+  } 
+
+}
+}
+
+nav{
+  div{
+      span{
+          a{
+              margin: auto 1rem;
+              color: rgb(199, 62, 62);
+          }
+      }
+  }
+}
+
+nav{
+  div{
+      button{
+          background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(107,9,121,1) 0%, rgba(255,0,56,1) 100%);
+         
+      }
+  }
+}
+.carousel-inner{
+  .carousel-caption{
+      button{
+          background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(107,9,121,1) 0%, rgba(255,0,56,1) 100%);
+          border: transparent;
+          padding: 0.5rem;
+          font-size: 1.5rem;
+      }
+
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #carouselExampleCaptions{
+      height: 100vh !important;
+  }
+}
+
+
 /*Color Theme*/
 
 $light-white: #f9f9f9;
