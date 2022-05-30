@@ -1,8 +1,6 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
-
-
-// MABOOOBI CUSTOM CSS 
+// MABOOOBI CUSTOM CSS
 
 /*Color Theme*/
 
@@ -19,7 +17,7 @@ $light-grey: #757575;
 
 body {
   h2::after {
-    content: '';
+    content: "";
   }
   font-size: 1.6rem;
   h5 {
@@ -56,10 +54,6 @@ body {
     }
   }
 }
-
-
-
-
 
 //FOOOTER KAMIL CUSTOME CSS
 
@@ -113,6 +107,10 @@ $footer_red: rgb(233, 94, 94);
     }
   }
   .open_hours {
+    p,
+    h4 {
+      color: #fff;
+    }
     background: url("../images/open_hours.avif") rgba(0, 0, 0, 0.7);
     background-position: center right;
     background-size: cover;
@@ -120,7 +118,6 @@ $footer_red: rgb(233, 94, 94);
     background-blend-mode: darken;
     border-radius: 10px;
     width: 100%;
-    color: #fff;
     padding: 1rem;
     text-align: left;
     .days {

@@ -11215,9 +11215,13 @@ body p {
   background-blend-mode: darken;
   border-radius: 10px;
   width: 100%;
-  color: #fff;
   padding: 1rem;
   text-align: left;
+}
+.footer .open_hours p,
+.footer .open_hours h4,
+.footer .open_hours .h4 {
+  color: #fff;
 }
 .footer .open_hours .days {
   margin: 1rem 0;
