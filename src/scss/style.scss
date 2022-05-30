@@ -2,67 +2,13 @@
 
 // Then add additional custom code here
 
-// kamal //
-
-nav{
-    
-  ul{
-      li {
-          a{
-          &:hover{
-              background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(107,9,121,1) 0%, rgba(255,0,56,1) 100%);   
-          }
-} 
-  } 
-
-}
-}
-
-nav{
-  div{
-      span{
-          a{
-              margin: auto 1rem;
-              color: rgb(199, 62, 62);
-          }
-      }
-  }
-}
-
-nav{
-  div{
-      button{
-          background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(107,9,121,1) 0%, rgba(255,0,56,1) 100%);
-         
-      }
-  }
-}
-.carousel-inner{
-  .carousel-caption{
-      button{
-          background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(107,9,121,1) 0%, rgba(255,0,56,1) 100%);
-          border: transparent;
-          padding: 0.5rem;
-          font-size: 1.5rem;
-      }
-
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  #carouselExampleCaptions{
-      height: 100vh !important;
-  }
-}
-
-
 /*Color Theme*/
 
 $light-white: #f9f9f9;
 $reddish-red: #ce3232;
 $black: black;
 $light-grey: #757575;
-$op-black: rgba(0, 0, 0,0.7);
+$op-black: rgba(0, 0, 0, 0.7);
 $p-color: rgb(200, 200, 200);
 
 * {
@@ -84,6 +30,95 @@ body {
     color: $light-grey;
   }
 }
+
+// kamal //
+
+.nav-item {
+  a:hover {
+    background-color: $reddish-red;
+  }
+}
+.nav-item {
+  font-size: 1.2rem;
+}
+.right-nav-item span {
+  font-size: 1.2rem;
+  a {
+    text-decoration: none;
+  }
+}
+.reserve-btn {
+  background-color: $reddish-red;
+  color: $light-white;
+}
+.reserve-btn:hover {
+  background-color: $black;
+  transition: 1.2s;
+  color: $light-white;
+}
+nav {
+  background-color: $black;
+
+  ul {
+    li {
+      a {
+        &:hover {
+          // background: linear-gradient(
+          //   90deg,
+          //   rgba(2, 0, 36, 1) 0%,
+          //   rgba(107, 9, 121, 1) 0%,
+          //   rgba(255, 0, 56, 1) 100%
+          // );
+          // background-color: blue;
+          transition: 1.2s;
+          // color: #ce3232;
+        }
+      }
+    }
+  }
+}
+nav {
+  div {
+    span {
+      a {
+        margin: auto 1rem;
+        color: rgb(199, 62, 62);
+      }
+    }
+  }
+}
+
+// nav {
+//   div {
+//     button {
+//       background-color: $reddish-red;
+//     }
+//   }
+// }
+.carousel-inner {
+  .carousel-caption {
+    button {
+      // background: linear-gradient(
+      //   90deg,
+      //   rgba(2, 0, 36, 1) 0%,
+      //   rgba(107, 9, 121, 1) 0%,
+      //   rgba(255, 0, 56, 1) 100%
+      // );
+
+      background-color: $reddish-red;
+      border: transparent;
+      padding: 0.5rem;
+      // font-size: 1.5rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #carouselExampleCaptions {
+    height: 100vh !important;
+  }
+}
+
 .about-section {
   padding: 6rem 0;
 }
@@ -113,16 +148,15 @@ body {
 
 // Alwaki
 
-.menus{
-  h4{
+.menus {
+  h4 {
     color: $light-grey;
     font-size: 10px;
     text-transform: uppercase;
     font-weight: bold;
   }
-  div{
-    .image{
-
+  div {
+    .image {
       height: 45vh;
       background-repeat: no-repeat;
       background-size: cover;
@@ -130,89 +164,86 @@ body {
       display: flex;
       align-items: end;
       padding: 0;
-      &:hover{
+      &:hover {
         cursor: pointer;
         transition: 1s;
-        background: scale(1.1) ;
+        background: scale(1.1);
       }
-      &:hover div{
+      &:hover div {
         cursor: pointer;
         display: block;
         animation: slid 0.5s ease-in-out;
       }
-      div{
+      div {
         width: 85%;
         background-color: $op-black;
         height: 15vh;
-        color: $light-white;   
+        color: $light-white;
         flex-direction: column;
         align-items: start;
         padding: 20px;
         display: none;
-        h3{
+        h3 {
           font-size: 24px;
         }
-        p{
+        p {
           color: $p-color;
           text-transform: uppercase;
           font-size: 10px;
           font-weight: bold;
         }
       }
-      .price{
-        width: 20% ;
+      .price {
+        width: 20%;
       }
     }
   }
 }
 
-.test{
+.test {
   width: 100%;
   height: 45vh;
-  background-color: rgba(0, 0, 0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: $light-white;
-  h2{
+  h2 {
     margin-bottom: 5%;
   }
-  div{
-    
-    p{
+  div {
+    p {
       font-size: 1.2rem;
       margin: auto;
       width: 80%;
       margin-bottom: 3%;
       color: $light-white;
     }
-    div{
+    div {
       display: flex;
       justify-content: center;
-      h4{
+      h4 {
         font-weight: bold;
       }
-      span{
+      span {
         font-size: 1.2rem;
         margin-left: 2%;
       }
     }
   }
 }
-    .div1{
-      display: none;
-    }
-    .div2{
-      display: none;
-    }
-  
+.div1 {
+  display: none;
+}
+.div2 {
+  display: none;
+}
 
 @for $i from 1 through 6 {
   .img_#{$i} {
-    background-image: url(../images/menu-image#{$i}.jpg) ;
-    
+    background-image: url(../images/menu-image#{$i}.jpg);
   }
 }
 
@@ -226,9 +257,7 @@ body {
     opacity: 1;
     transform: translateY(0px);
   }
-  
 }
-
 
 //FOOOTER KAMIL CUSTOME CSS
 
@@ -282,7 +311,7 @@ $footer_red: rgb(233, 94, 94);
     }
   }
   .open_hours {
-    background: url("../images/open_hours.avif") rgba(0, 0, 0, 0.7);
+    background: url('../images/open_hours.avif') rgba(0, 0, 0, 0.7);
     background-position: center right;
     background-size: cover;
     background-repeat: no-repeat;

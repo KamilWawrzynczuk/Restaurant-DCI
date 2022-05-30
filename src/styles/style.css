@@ -11139,6 +11139,55 @@ body p {
   color: #757575;
 }
 
+.nav-item a:hover {
+  background-color: #ce3232;
+}
+
+.nav-item {
+  font-size: 1.2rem;
+}
+
+.right-nav-item span {
+  font-size: 1.2rem;
+}
+.right-nav-item span a {
+  text-decoration: none;
+}
+
+.reserve-btn {
+  background-color: #ce3232;
+  color: #f9f9f9;
+}
+
+.reserve-btn:hover {
+  background-color: black;
+  transition: 1.2s;
+  color: #f9f9f9;
+}
+
+nav {
+  background-color: black;
+}
+nav ul li a:hover {
+  transition: 1.2s;
+}
+
+nav div span a {
+  margin: auto 1rem;
+  color: rgb(199, 62, 62);
+}
+
+.carousel-inner .carousel-caption button {
+  background-color: #ce3232;
+  border: transparent;
+  padding: 0.5rem;
+}
+
+@media screen and (min-width: 1000px) {
+  #carouselExampleCaptions {
+    height: 100vh !important;
+  }
+}
 .about-section {
   padding: 6rem 0;
 }
