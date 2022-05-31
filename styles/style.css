@@ -11128,9 +11128,6 @@ textarea.form-control-lg {
 body {
   font-size: 1.6rem;
 }
-body h2::after, body .h2::after {
-  content: "";
-}
 body h5, body .h5 {
   color: #757575;
 }
@@ -11390,6 +11387,9 @@ nav div span a {
   color: #fff;
   padding: 1rem;
   text-align: left;
+}
+.footer .open_hours p {
+  color: #fff;
 }
 .footer .open_hours .days {
   margin: 1rem 0;
