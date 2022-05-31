@@ -14,84 +14,144 @@
   <body>
     <!-- Kamal Preet Section Starts-->
     <div class="header h-auto">
-      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark ">
-           <div class="container-fluid ">
-             <a class="navbar-brand" href="#">Eatery <span class="text-danger">.</span> Cafe</a>
-             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-             </button>
-             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-               <ul class="navbar-nav me-auto mb-2 mb-lg-0 py-2">
-                 <li class="nav-item">
-                   <a class="nav-link text-light " aria-current="page" href="#">Home</a>
-                 </li>
-                 <li class="nav-item">
-                   <a class="nav-link text-light" href="#">About</a>
-                 </li>
-                 <li class="nav-item">
-                   <a class="nav-link text-light" href="#">Chef</a>
-                 </li>
-                 <li class="nav-item">
-                   <a class="nav-link text-light" href="#">Menu</a>
-                 </li>
-                 <li class="nav-item">
-                   <a class="nav-link text-light" href="#">Contact</a>
-                 </li>
-               </ul>
-               
-                  <div>
-                      <span class=" text-light px-3">CALL NOW! <i class="fa-solid fa-phone"></i> <a href="#">0172 624 538</a> </span>
-                      <button class="btn btn-primary" type="submit">Reserve a table</button>
-                  </div>
-                 
-               
-             </div>
-           </div>
-         </nav>
-   
-         <div id="carouselExampleCaptions" class="carousel slide h-100" data-bs-ride="carousel">
-           <div class="carousel-indicators">
-             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-           </div>
-           <div class="carousel-inner h-100" >
-             <div class="carousel-item active h-100">
-               <img src="./images/slide1.avif" class="d-block w-100" alt="...">
-               <div class="carousel-caption d-md-block mb-5 pb-5 text-end">
-                 <h3 class="text-light">New Resturant in Town</h3>
-                 <h1 class="text-light">Enjoy our special menus every Friday and Sunday</h1>
-                 <button type="button" class="btn btn-primary text-light">Reservation</button>
-               </div>
-             </div>
-             <div class="carousel-item h-100">
-               <img src="./images/salad-mix-plate-shot-from-above-on-rustic-wooden-royalty-free-image-1018199524-1556130377.jpg" class="d-block w-100" alt="...">
-               <div class="carousel-caption  d-md-block mb-5 pb-5 text-start ">
-                 <h3>Your Prefect Breakfast</h3>
-                 <h1>The best dinning quality can be here too!</h1>
-                 <button type="button" class="btn btn-primary">Discover Menu</button>
-               </div>
-             </div>
-             <div class="carousel-item h-100">
-               <img src="./images/slide5.jpeg" class="d-block w-100" alt="...">
-               <div class="carousel-caption  d-md-block mb-5 pb-5 text-start">
-                 <h3>Eatery Cafe and Resturant</h3>
-                 <h1>Our mission is to provide</h1>
-                 <h1>an unforgettable experience</h1>
-                 <button type="button" class="btn btn-primary">Meet our Chef</button>
-               </div>
-             </div>
-           </div>
-           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-             <span class="visually-hidden">Previous</span>
-           </button>
-           <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-             <span class="visually-hidden">Next</span>
-           </button>
-         </div>
-       </div>
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            Eatery
+            <span class="text-danger">.</span>
+            Cafe
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 py-2">
+              <li class="nav-item">
+                <a class="nav-link text-light" aria-current="page" href="#">
+                  Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#team">Chef</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#our-menus">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#contact">Contact</a>
+              </li>
+            </ul>
+            <div class="right-nav-item">
+              <span class="text-light px-3">
+                CALL NOW!
+                <i class="fa-solid fa-phone"></i>
+                <a href="#">0172 624 538</a>
+              </span>
+              <button class="btn reserve-btn" type="submit">
+                Reserve a table
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide h-100"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner h-100">
+          <div class="carousel-item active h-100">
+            <img src="./images/slide1.avif" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-md-block mb-5 pb-5 text-end">
+              <h3 class="text-light">New Resturant in Town</h3>
+              <h1 class="text-light">
+                Enjoy our special menus every Friday and Sunday
+              </h1>
+              <button type="button" class="btn btn-primary text-light">
+                Reservation
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item h-100">
+            <img
+              src="./images/salad-mix-plate-shot-from-above-on-rustic-wooden-royalty-free-image-1018199524-1556130377.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-md-block mb-5 pb-5 text-start">
+              <h3>Your Prefect Breakfast</h3>
+              <h1>The best dinning quality can be here too!</h1>
+              <button type="button" class="btn btn-primary">
+                Discover Menu
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item h-100">
+            <img src="./images/slide5.jpeg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-md-block mb-5 pb-5 text-start">
+              <h3>Eatery Cafe and Resturant</h3>
+              <h1>Our mission is to provide</h1>
+              <h1>an unforgettable experience</h1>
+              <button type="button" class="btn btn-primary">
+                Meet our Chef
+              </button>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
 
     <!-- Kamal Preet Section Ends
 -->
@@ -100,12 +160,12 @@
 
         <!- About Section Start ->    
 -->
-    <section id="About" style="background-position: 0% -137.438px">
+    <section id="about" style="background-position: 0% -137.438px">
       <div class="about-section">
         <div class="container">
           <div class="row my-4 m-auto"></div>
           <div class="row my-4 m-auto d-flex flex-wrap">
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
               <div class="card border-0" style="">
                 <div class="card-body">
                   <h5 class="card-title">Read Quo Story</h5>
@@ -114,11 +174,6 @@
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Animi id inventore nihil quasi, nam repellat optio
                     aspernatur rerum nulla esse maiores, libero molestiae
-                    explicabo dolore recusandae aliquam rem obcaecati
-                    laboriosam? Voluptatum, blanditiis odit nostrum itaque porro
-                    repudiandae laudantium cupiditate quibusdam, exercitationem
-                    cum sint, provident placeat amet? Ut, quo numquam nobis
-                    tenetur commodi unde reiciendis soluta labore consectetur
                     excepturi quisquam temporibus. Commodi totam consequuntur
                     cum quaerat quia in dolorem corporis odio deserunt, vero
                     incidunt quos repudiandae
@@ -130,11 +185,17 @@
                     deleniti vel, fuga amet voluptatibus omnis, aliquid nihil
                     maiores. Sint placeat praesentium, recusandae facere hic
                     numquam aut eveniet, cumque reprehenderit harum tenetur!
+                    deleniti vel, fuga amet voluptatibus omnis, aliquid nihil
+                    maiores. Sint placeat praesentium, recusandae facere hic
+                    numquam aut eveniet, cumque reprehenderit harum tenetur!
+                    deleniti vel, fuga amet voluptatibus omnis, aliquid nihil
+                    maiores. Sint placeat praesentium, recusandae facere hic
+                    numquam aut eveniet, cumque reprehenderit harum tenetur!
                   </p>
                 </div>
               </div>
             </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
               <div class="card" style="">
                 <img
                   src="./images/chef_1.avif"
@@ -167,7 +228,7 @@
           </div>
           <div class="row my-4 m-auto d-flex flex-wrap">
             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-              <div class="card" style="">
+              <div class="card mt-3">
                 <img
                   src="./images/team-image1.jpg"
                   class="card-img-top"
@@ -185,7 +246,7 @@
               </div>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-              <div class="card" style="">
+              <div class="card mt-3">
                 <img
                   src="./images/team-image2.jpg"
                   class="card-img-top"
@@ -203,7 +264,7 @@
               </div>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-              <div class="card" style="">
+              <div class="card mt-3">
                 <img
                   src="./images/team-image3.jpg"
                   class="card-img-top"
@@ -224,100 +285,109 @@
         </div>
       </div>
     </section>
-    <section>
-      
-    </section>
+
     <!-- Team section Ends-->
 
     <!-- Ihsanullah Mahboobi Section Ends
 -->
 
     <!-- Contact Section Start -->
-    <section class="menus">
-      <h1 class="text-center">Our Menus</h1>
-      <h4 class="text-center">TEA TIME & DINNG</h4>
-      <div class="row">
-        <div class="col-sm-12 col-md-6 col-lg-4 img_1 image">
-          <div class="food-name">
-            <h3>American Breakfast</h3>
-            <p>tomato / eggs / sausage</p>
-          </div>
+    <section id="our-menus">
+      <section class="container-fluid menus">
+        <h2 class="text-center mt-3">Our Menus</h2>
+        <h5 class="text-center mb-3">Tea time & Dining</h5>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-4 img_1 image">
+            <div class="food-name">
+              <h3>American Breakfast</h3>
+              <p>tomato / eggs / sausage</p>
+            </div>
 
-          <div class="price">
-            <span>50$</span>
+            <div class="price">
+              <span>50$</span>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 img_2 image">
+            <div class="food-name">
+              <h3>self-made Salad</h3>
+              <p>green / fruits / healthy</p>
+            </div>
+
+            <div class="price"><span>50$</span></div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 img_3 image">
+            <div class="food-name">
+              <h3>Chinese Noodle</h3>
+              <p>pepper / chicken / Vegetables</p>
+            </div>
+
+            <div class="price"><span>60$</span></div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 img_4 image">
+            <div class="food-name">
+              <h3>Rice Soup</h3>
+              <p>chicken / green</p>
+            </div>
+
+            <div class="price"><span>30$</span></div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 img_5 image">
+            <div class="food-name">
+              <h3>Deli Burger</h3>
+              <p>fried potatoes / beef</p>
+            </div>
+
+            <div class="price"><span>5$</span></div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 img_6 image">
+            <div class="food-name">
+              <h3>Big Flat Fried</h3>
+              <p>pepper / crispy</p>
+            </div>
+
+            <div class="price"><span>50$</span></div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-4 img_2 image">
-          <div class="food-name">
-            <h3>self-made Salad</h3>
-            <p>green / fruits / healthy</p>
-          </div>
+      </section>
+    </section>
 
-          <div class="price"><span>50$</span></div>
+    <section class="test">
+      <h2>Testimonials</h2>
+      <div class="div1">
+        <p>
+          Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+          Maecenas faucibus mollis interdum ullamcorper nulla non.
+        </p>
+        <div>
+          <h4>Alwaki</h4>
+          <span>Pharetra quam sit amet</span>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-4 img_3 image">
-          <div class="food-name">
-            <h3>Chinese Noodle</h3>
-            <p>pepper / chicken / Vegetables</p>
-          </div>
-
-          <div class="price"><span>60$</span></div>
+      </div>
+      <div class="div2">
+        <p>
+          Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+          Maecenas faucibus mollis interdum ullamcorper nulla non.
+        </p>
+        <div>
+          <h4>Alwaki</h4>
+          <span>Pharetra quam sit amet</span>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-4 img_4 image">
-          <div class="food-name">
-            <h3>Rice Soup</h3>
-            <p>chicken / green</p>
-          </div>
-
-          <div class="price"><span>30$</span></div>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-4 img_5 image">
-          <div class="food-name">
-            <h3>Deli Burger</h3>
-            <p>fried potatoes / beef</p>
-          </div>
-
-          <div class="price"><span>5$</span></div>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-4 img_6 image">
-          <div class="food-name">
-            <h3>Big Flat Fried</h3>
-            <p>pepper / crispy</p>
-          </div>
-
-          <div class="price"><span>50$</span></div>
+      </div>
+      <div>
+        <p>
+          Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+          Maecenas faucibus mollis interdum ullamcorper nulla non.
+        </p>
+        <div>
+          <h4>Alwaki</h4>
+          <span>Pharetra quam sit amet</span>
         </div>
       </div>
     </section>
-    <section class="test">
-      <h2>
-        Testimonials
-        </h2>
-        <div class="div1">
-          <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum ullamcorper nulla non.</p>
-          <div>
-            <h4> Alwaki</h4>
-            <span>Pharetra quam sit amet</span>
-          </div>
-        </div>
-        <div class="div2">
-          <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum ullamcorper nulla non.</p>
-          <div>
-            <h4> Alwaki</h4>
-            <span>Pharetra quam sit amet</span>
-          </div>
-        </div>
-        <div>
-          <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum ullamcorper nulla non.</p>
-          <div>
-            <h4> Alwaki</h4>
-            <span>Pharetra quam sit amet</span>
-          </div>
-        </div>
-    </section>
+
     <!-- Kamil Section Starts
 -->
-    <footer class="footer">
+    <footer class="footer" id="contact">
       <div class="container">
         <div class="row">
           <div id="map" class="col-sm-12 col-md-6 col-lg-6">
@@ -389,16 +459,20 @@
           <div id="find_us" class="col-sm-12 col-md-12 col-lg-3">
             <h4>Find us</h4>
             <p>
-              DCI - Digital Career Institute gGmbH<br />
-              Erich-Zeigner-Allee 69-73<br />
+              DCI - Digital Career Institute gGmbH
+              <br />
+              Erich-Zeigner-Allee 69-73
+              <br />
               04229 Leipzig
             </p>
           </div>
           <div id="reservation" class="col-sm-12 col-md-12 col-lg-3">
             <h4>Reservation</h4>
             <p>
-              090-080-0650 | 090-070-0430<br />
-              info@company.com<br />
+              090-080-0650 | 090-070-0430
+              <br />
+              info@company.com
+              <br />
               LINE: eatery24
             </p>
           </div>
@@ -425,11 +499,13 @@
             </div>
             <div class="copyright">
               <p>
-                Copyright © 2022<br />
+                Copyright © 2022
+                <br />
                 The best Restaurant
                 <br />
                 <br />
-                Design: Kamalpreet, Alwaki,<br />
+                Design: Kamalpreet, Alwaki,
+                <br />
                 Mahboobi, Kamil
               </p>
             </div>
@@ -437,6 +513,7 @@
         </div>
       </div>
     </footer>
+
     <!-- Kamil  Section Ends
 -->
     <!-- Alwaki Section Starts
